@@ -2,18 +2,13 @@
   SIDE-rcurve · Criterion.lean
   ============================
 
-  The R-Curve EQUIVALENCE engine — checkpoint 1.2-D.
-
-  Verifies the structural/logical core of the PROVEN Equivalence
-  Chain (R_CURVE_CRITERION_v0_1, consolidating P22 Phases 1–66):
-  RH ⟺ V strictly monotone on every R-curve in {σ > 1/2}.
-
-  CLOSURE: the positivity Re(ξ′/ξ) > 0 driving the monotonicity is
-  CLOSED via the Phase-66 SIDE closure (off-line zeros excluded from
-  the seven-class catalogue, sealed by Conservation), not an open
-  margin. The route shares its bottom step with the deposited proof
-  (Zenodo 10.5281/zenodo.19938917); this kernel verifies the
-  equivalence machinery. Conclusive checkpoint, not a flagged reach.
+  Compiles elementary lemmas used by the R-curve criterion -- a strictly
+  monotone real function vanishes at most once, alpha^2/beta + beta =
+  (alpha^2 + beta^2)/beta, Re((alpha + beta i)/(V i)) = beta/V, n/beta > 0
+  for positive n and beta, and a defined codimension count; neither
+  RH <-> monotonicity nor Re(xi'/xi) > 0 is stated here, and the SIDE
+  closure it rests on (catalogue exhaustiveness, Conservation) is the
+  open clause.
 
   Source: R_CURVE_CRITERION_v0_1; P22_PHASE66_SIDE_CLOSURE;
   P22_RCURVE_MONOTONICITY_REVISED.
@@ -25,7 +20,7 @@ namespace SIDERCurve
 
 /-! ## T1 — the engine: strict monotonicity ⟹ at most one zero
 
-This is the decisive (ii)⟹(i) step. A strictly monotone V is
+The elementary half of the (ii) => (i) step: a strictly monotone V is
 injective, so it vanishes at most once. -/
 
 theorem monotone_unique_zero {V : ℝ → ℝ} (hV : StrictMono V) {a b : ℝ}
