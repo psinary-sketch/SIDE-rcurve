@@ -1,0 +1,8 @@
+SIDERCurve.monotone_unique_zero
+SIDERCurve.monotonicity_formula
+SIDERCurve.beta_V_re
+SIDERCurve.singular_repulsion
+SIDERCurve.zero_codim
+SIDERCurve.online_zero_codim_one
+SIDERCurve.offline_zero_codim_two
+SIDERCurve.second_zero_breaks_monotone
