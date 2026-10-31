@@ -4,7 +4,7 @@ SIDE-rcurve compiles, over Mathlib, statements about real functions and real and
 
     theorem monotone_unique_zero {V : ℝ → ℝ} (hV : StrictMono V) {a b : ℝ} (ha : V a = 0) (hb : V b = 0) : a = b
 
-The R-curve criterion (RH iff V strictly monotone on every R-curve in σ > 1/2), its equivalence and the positivity that drives it are the documents' (R_CURVE_CRITERION_v0_1 and the deposited proof); the kernel compiles none of them. It checks the one-zero lemma and the algebraic identities the criterion uses.
+The R-curve criterion (RH iff V strictly monotone on every R-curve in σ > 1/2), its equivalence and the positivity that drives it are the documents' (R_CURVE_CRITERION_v0_1 and the deposited argument under the named premise); the kernel compiles none of them. It checks the one-zero lemma and the algebraic identities the criterion uses.
 
 J. York Seale — https://orcid.org/0009-0008-7993-0310
 
@@ -12,13 +12,13 @@ J. York Seale — https://orcid.org/0009-0008-7993-0310
 
 - `beta_V_re` — the Beta-V identity Re(xi'/xi) = beta/V on the curve (xi = iV).
 
-## Closure status (not an open margin)
+## Closure status
 
-The positivity Re(xi'/xi) > 0 that drives the monotonicity is **closed**, not a reach. The Effective Dominance Theorem (Phase-66 SIDE closure) excludes off-line zeros from the seven-class catalogue, sealed by Conservation of Spectra, so every Hadamard term is positive. The Feb-2026 "~1% landscape margin" framing is superseded.
+The positivity clause h2 is open; this kernel compiles a one-zero lemma on strictly monotone real functions and the criterion's algebraic identities.
 
 ## What it does NOT do
 
-It does not re-verify the analytic Hadamard-anatomy positivity in Lean (that is the deposited proof's mechanism enumeration).
+It does not re-verify the analytic Hadamard-anatomy positivity in Lean (that is the mechanism enumeration of the deposited argument under the named premise).
 
 ## Federation context
 
